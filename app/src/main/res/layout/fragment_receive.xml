@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_vertical_margin"
+
+    tools:context="com.masic.bwallet.main.fragments.receive.ReceiveFragment">
+
+
+    <TextView
+        android:id="@+id/tv_user_receive_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/space_between_content_areas_8dp"
+        android:text="@string/your_receive_address"
+        android:textSize="@dimen/font_size_subheading_16sp" />
+
+    <TextView
+        android:id="@+id/tv_user_receive_address_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_user_receive_address"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/space_between_content_areas_8dp"
+        android:text="@string/your_receive_address_value"
+        android:textIsSelectable="true"
+        android:selectAllOnFocus="true"/>
+
+    <ImageView
+        android:id="@+id/iv_user_qr_code"
+        android:layout_width="256dp"
+        android:layout_height="250dp"
+        android:maxHeight="512dp"
+        android:maxWidth="512dp"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/user_qr_code" />
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_receive_btc"
+        android:icon="@drawable/ic_currency_receive_black_24dp"
+        android:title="@string/title_receive_btc"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+
+
+    <item
+        android:id="@+id/navigation_wallet"
+        android:icon="@drawable/ic_account_balance_wallet_black_24dp"
+        android:title="@string/title_wallet"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+
+
+    <item
+        android:id="@+id/navigation_transfer_btc"
+        android:icon="@drawable/ic_currency_send_black_24dp"
+        android:title="@string/title_transfer_btc"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+
+</menu>

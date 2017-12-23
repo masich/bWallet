@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d7d7d7</color>
+    <color name="colorPrimaryDark">#363636</color>
+        <color name="colorAccent">#a1a1a1</color>
+
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="bottom_nav_background">#f0f0f0</color>
+    <color name="color_bottom_nav_icon_selected">#363636</color>
+    <color name="color_bottom_nav_icon_unselected">#bcbcbc</color>
+</resources>

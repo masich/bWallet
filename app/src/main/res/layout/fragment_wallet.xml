@@ -1,0 +1,122 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.masic.bwallet.main.fragments.wallet.WalletFragment">
+
+
+    <LinearLayout
+        android:id="@+id/ll_balance_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_wallet_balance_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/space_between_content_areas_8dp"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="@string/wallet_balance"
+            android:textSize="@dimen/font_size_subheading_16sp" />
+
+        <TextView
+            android:id="@+id/tv_wallet_account_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/space_between_content_areas_8dp"
+            android:layout_marginTop="@dimen/space_between_content_areas_8dp"
+            android:text="@string/balance_in_btc"
+            android:textSize="@dimen/font_size_account_balance_24sp"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_between_content_areas_8dp"
+            android:layout_marginTop="@dimen/space_between_content_areas_8dp">
+
+            <TextView
+                android:id="@+id/tv_wallet_available_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+
+                android:layout_centerVertical="true"
+                android:text="@string/available_balance"
+                android:textSize="@dimen/font_size_subheading_16sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tv_wallet_available_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/balance_in_btc"
+                android:textSize="@dimen/font_size_subheading_16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_between_content_areas_8dp"
+            android:layout_marginTop="@dimen/space_between_content_areas_8dp">
+
+            <TextView
+                android:id="@+id/tv_wallet_estimated_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/expected_balance"
+                android:textSize="@dimen/font_size_subheading_16sp"
+                android:textStyle="normal" />
+
+
+            <TextView
+                android:id="@+id/tv_wallet_estimated_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/balance_in_btc"
+                android:textSize="@dimen/font_size_subheading_16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_transactions_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/space_between_content_areas_8dp"
+            android:text="@string/recent_transactions"
+            android:textSize="@dimen/body_font_ssize_14sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_tx_refresher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ll_balance_layout">
+
+        <ListView
+            android:id="@+id/lv_wallet_transactions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</android.support.constraint.ConstraintLayout>
+
+
+

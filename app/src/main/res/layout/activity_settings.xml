@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.masic.bwallet.settings.SettingsActivity"
+    android:orientation="vertical">
+    <include layout="@layout/layout_toolbar" />
+
+    <TextView
+        android:id="@+id/tv_addresses_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:text="@string/all_of_used_addresses"/>
+
+    <ListView
+        android:id="@+id/lv_used_addreses"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:entries="@array/settings_entries">
+    </ListView>
+
+    <Button
+        android:id="@+id/b_log_out_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/exit_from_wallet" />
+</LinearLayout>
